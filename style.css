@@ -1,4 +1,4 @@
-/* Контейнер для видео */
+
 .video-container {
     position: relative;
     width: 100%;
@@ -15,7 +15,6 @@
     text-align: center;
 }
 
-/* Видео на заднем плане */
 .background-video {
     position: absolute;
     top: 0;
@@ -26,23 +25,22 @@
     z-index: 1;
 }
 
-/* Текст с выделением */
 .text {
     position: relative;
     z-index: 2;
 }
 
-/* Обрезка цветных блоков с текстом */
+
 .highlight {
     display: inline-block;
     position: relative;
     z-index: 3;
     background: none;
-    color: transparent; /* Скрываем текст */
+    color: transparent;
 }
 
 .highlight::before {
-    content: attr(data-text); /* Дублируем текст */
+    content: attr(data-text);
     position: absolute;
     top: 0;
     left: 0;
@@ -119,7 +117,7 @@
 
 @media (min-width: 700px) {
     .bg-video-5 {
-        width: 20vw;
+        width: 16vw;
     }
 }
 
@@ -145,23 +143,23 @@
             linear-gradient( to left, black 0%, black 5vw, transparent 5vw, transparent 45vw, black 45vw, black 100vw),
 
             linear-gradient(black 0%, black 3vw, transparent 3vw, transparent 11vw, black 11vw, black 100% ),
-            linear-gradient( to left, black 0%, black 40vw, transparent 40vw, transparent 88vw, black 88vw, black 100vw),
+            linear-gradient( to left, black 0%, black 40vw, transparent 40vw, transparent 83vw, black 83vw, black 100vw),
 
             linear-gradient(black 0%, black 3vw, transparent 3vw, transparent 11vw, black 11vw, black 100% ),
-            linear-gradient( to left, black 0%, black 70vw, transparent 70vw, transparent 95vw, black 95vw, black 100vw),
+            linear-gradient( to left, black 0%, black 67vw, transparent 67vw, transparent 93vw, black 93vw, black 100vw),
 
             linear-gradient(black 0%, black 3vw, transparent 3vw, transparent 11vw, black 11vw, black 100% ),
             linear-gradient( to left, black 0%, black 100vw),
 
             linear-gradient(black 0%, black 3vw, transparent 3vw, transparent 11vw, black 11vw, black 100% ),
-            linear-gradient( to left, black 0%, black 65vw, transparent 65vw, transparent 80vw, black 80vw, black 100vw),
+            linear-gradient( to left, black 0%, black 60vw, transparent 60vw, transparent 75vw, black 75vw, black 100vw),
 
-            linear-gradient(black 0%, black 3vw, transparent 3vw, transparent 11vw, black 11vw, black 100% ),
-            linear-gradient( to left, black 0%, black 5vw, transparent 5vw, transparent 42vw, black 42vw, black 100vw)
+            linear-gradient(black 0%, black 4vw, transparent 4vw, transparent 11vw, black 11vw, black 100% ),
+            linear-gradient( to left, black 0%, black 5vw, transparent 5vw, transparent 40vw, black 40vw, black 100vw)
 ;
 
     mask-repeat: no-repeat;
-    mask-position: 0 0, 0 0, 0 12vw, 0 12vw, 0 25vw, 0 25vw,  0 38vw, 0 38vw,  0 50vw, 0 50vw, 0 62vw, 0 62vw;
+    mask-position: 0 0, 0 0, 0 12vw, 0 12vw, 0 25vw, 0 25vw,  0 38vw, 0 38vw,  0 50vw, 0 50vw, 0 61vw, 0 61vw;
     mask-size: 100% 14vw, 100% 14vw, 100% 14vw, 100% 14vw, 100% 14vw, 100% 14vw, 100% 14vw, 100% 14vw, 100% 14vw, 100% 14vw, 100% 100%, 100% 14vw;
 
     /* Для браузеров, которые используют вебкит */
@@ -181,16 +179,16 @@
 
         mask-image:
                 linear-gradient(black 0%, black 2vw, transparent 2vw, transparent 7vw, black 7vw, black 100% ),
-                linear-gradient( to left, black 0%, black 33vw, transparent 33vw, transparent 63vw, black 63vw, black 100vw),
+                linear-gradient( to left, black 0%, black 33vw, transparent 33vw, transparent 60vw, black 60vw, black 100vw),
 
                 linear-gradient(black 0%, black 2vw, transparent 2vw, transparent 7vw, black 7vw, black 100% ),
-                linear-gradient( to left, black 0%, black 55vw, transparent 55vw, transparent 75vw, black 75vw, black 100vw),
+                linear-gradient( to left, black 0%, black 55vw, transparent 55vw, transparent 70vw, black 70vw, black 100vw),
 
                 linear-gradient(black 0%, black 2vw, transparent 2vw, transparent 7vw, black 7vw, black 100% ),
-                linear-gradient( to left, black 0%, black 43vw, transparent 43vw, transparent 63vw, black 63vw, black 100vw),
+                linear-gradient( to left, black 0%, black 40vw, transparent 40vw, transparent 60vw, black 60vw, black 100vw),
 
                 linear-gradient(black 0%, black 2vw, transparent 2vw, transparent 7vw, black 7vw, black 100% ),
-                linear-gradient( to left, black 0%, black 2vw, transparent 2vw, transparent 60vw, black 60vw, black 100vw),
+                linear-gradient( to left, black 0%, black 2vw, transparent 2vw, transparent 55vw, black 55vw, black 100vw),
 
                 linear-gradient(black 0%,  black 100% ),
                 linear-gradient( to left, black 0%,  black 100vw);
